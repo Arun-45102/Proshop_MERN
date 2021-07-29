@@ -1,0 +1,31 @@
+{
+  "name": "proshop_mern",
+  "version": "1.0.0",
+  "description": "MERN stack shopping app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arun-45102/Proshop_MERN.git"
+  },
+  "author": "Arun Kumar M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arun-45102/Proshop_MERN/issues"
+  },
+  "homepage": "https://github.com/Arun-45102/Proshop_MERN#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
+  }
+}
